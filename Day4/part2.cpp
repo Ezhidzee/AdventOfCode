@@ -11,7 +11,6 @@ int main() {
     ifstream input("input.txt");
 
     string line;
-    int sum = 0;
     unordered_map<int, int> cards;
     while (getline(input, line)) {
         while (line.find("  ") != string::npos) line.replace(line.find("  "), 2, " ");
