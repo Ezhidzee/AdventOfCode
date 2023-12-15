@@ -35,13 +35,6 @@ bool intersect(point a, point b, point c, point d) {
            && area(c, d, a) * area(c, d, b) <= 0;
 }
 
-bool find(const vector<point> &coords, bool a, bool b) {
-    for (const point &p: coords) {
-        if (p.x == a && p.y == b) return true;
-    }
-    return false;
-}
-
 int main() {
     ifstream input("input.txt");
     if (!input.is_open()) {
